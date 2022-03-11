@@ -22,12 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 form.addEventListener("submit", function () {
-  storage = {
-    name: nameInput.value,
-    phone: phoneInput.value,
-    mail: mailInput.value,
-  }
+  if (isStorageSupport) {
+    storage = {
+      name: nameInput.value,
+      phone: phoneInput.value,
+      mail: mailInput.value,
+    }
 
   localStorage.setItem ("storage", JSON.stringify(storage));
 
+  }
 });
