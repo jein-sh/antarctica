@@ -1,14 +1,15 @@
 .contacts {
   display: flex;
-  margin: 120px 0;
+
+  padding: 120px 50px;
 
   @include vp-1259 {
-    margin: 100px 0;
+    padding: 100px 45px;
   }
 
   @include vp-767 {
     flex-direction: column;
-    margin: 58px 0 65px;
+    padding: 58px 15px 65px;
   }
 }
 
@@ -121,5 +122,9 @@
     background-image: url("../img/svg/phone.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 }
