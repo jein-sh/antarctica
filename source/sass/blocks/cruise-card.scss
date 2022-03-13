@@ -9,7 +9,8 @@
 
   color: $color-default-white;
 
-  &:hover .cruise-card__intro {
+  &:hover .cruise-card__intro,
+  &:focus-within .cruise-card__intro {
     z-index: 2;
   }
 }

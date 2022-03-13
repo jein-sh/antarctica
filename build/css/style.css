@@ -1009,7 +1009,8 @@ button,
   color: #f9fbfd;
 }
 
-.cruise-card:hover .cruise-card__intro {
+.cruise-card:hover .cruise-card__intro,
+.cruise-card:focus-within .cruise-card__intro {
   z-index: 2;
 }
 
@@ -1176,24 +1177,25 @@ button,
 }
 
 .form legend {
-  margin: 0 0 25px;
+  margin: 0 0 27px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 }
 
 .form__field {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .form__field input {
   width: 100%;
-  padding: 15px 15px 12px;
+  padding: 15px 17px 12px;
+  border: 0;
 }
 
 .form__field-checkbox {
   padding-left: 20px;
-  margin: 5px 0 32px;
+  margin: 3px 0 32px;
   font-size: 10px;
   line-height: 13px;
   font-weight: 400;
@@ -1884,7 +1886,7 @@ button,
   }
 
   .form__field-checkbox {
-    margin: 0 0 27px;
+    margin: -2px 0 27px;
   }
 
   .contacts {
