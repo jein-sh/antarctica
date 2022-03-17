@@ -500,11 +500,6 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -moz-user-select: -moz-none;
-  -o-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .wrapper {
@@ -880,7 +875,7 @@ button,
 }
 
 .advantage {
-  padding: 110px 0 104px;
+  padding: 110px 0 64px;
   background-color: #dce8f2;
   background-image: url("../img/content/background-advantage.jpg");
   background-position: center;
@@ -1063,7 +1058,7 @@ button,
 }
 
 .cruise-card__intro h4 {
-  margin-bottom: 12px;
+  margin-bottom: 3px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -1253,6 +1248,8 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
+  color: #011c40;
+  background-color: #f9fbfd;
   border: 0;
   cursor: pointer;
 }
@@ -1298,7 +1295,7 @@ button,
 }
 
 .contacts__intro h3 {
-  margin: 0 0 32px;
+  margin: 13px 0 32px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -1458,7 +1455,7 @@ button,
   }
 
   .advantage {
-    padding: 90px 0  85px;
+    padding: 90px 0  55px;
   }
 
   .advantage h2 {
@@ -1930,7 +1927,11 @@ button,
   }
 
   .contacts__intro h3 {
-    margin-bottom: 26px;
+    margin: 0 0 26px;
+  }
+
+  .contacts__intro a {
+    margin-bottom: 0;
   }
 }
 

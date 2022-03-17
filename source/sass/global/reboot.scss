@@ -71,12 +71,5 @@ input:matches([type="email"],
 button,
 [type="button"],
 [type="submit"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  -moz-user-select: -moz-none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }

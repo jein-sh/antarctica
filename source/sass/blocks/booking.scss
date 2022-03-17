@@ -19,7 +19,7 @@
 
   margin: 50px 60px;
 
-  @include vp-1259 {
+  @include vp-1023 {
     flex-direction: column;
     justify-content: center;
 
@@ -37,7 +37,7 @@
 
   margin: -10px  50px 0 0;
 
-  @include vp-1259 {
+  @include vp-1023 {
     margin: 0 0 52px;
     align-items: center;
   }
@@ -55,7 +55,7 @@
   line-height: 60px;
   font-weight: 700;
 
-  @include vp-1259 {
+  @include vp-1023 {
     margin-bottom: 3px;
 
     text-align: center;
@@ -78,7 +78,7 @@
   font-size: 18px;
   line-height: 27px;
 
-  @include vp-1259 {
+  @include vp-1023 {
     text-align: center;
   }
 

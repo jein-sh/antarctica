@@ -27,7 +27,7 @@
   font-weight: 500;
   z-index: 1;
 
-  @include vp-1259 {
+  @include vp-1023 {
     bottom: 27px;
     left: 35px;
   }
@@ -60,7 +60,7 @@
   z-index: -1;
   background-color: $color-default-black;
 
-  @include vp-1259 {
+  @include vp-1023 {
     padding: 5px 35px 35px;
   }
 
@@ -70,7 +70,7 @@
 }
 
 .cruise-card__intro h4 {
-  margin-bottom: 12px;
+  margin-bottom: 3px;
 
   font-size: 18px;
   line-height: 27px;
