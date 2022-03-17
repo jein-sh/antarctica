@@ -39,7 +39,7 @@
 .cruises__list {
   display: grid;
   gap: 30px;
-  grid-template-columns: min-content min-content min-content min-content;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
   margin: 0;
   padding: 0;
@@ -47,23 +47,23 @@
   list-style: none;
 
   @include vp-1023 {
-    grid-template-columns: min-content min-content;
+    grid-template-columns: 1fr 1fr;
   }
 
   @include vp-767 {
-    grid-template-columns: min-content;
+    grid-template-columns: 1fr;
   }
 }
 
 .cruises__item {
-  width: 260px;
+  max-width: 260px;
   min-height: 386px;
 
   @include vp-1023 {
-    width: 309px;
+    max-width: 309px;
   }
 
   @include vp-767 {
-    width: 270px;
+    max-width: 270px;
   }
 }
