@@ -50,7 +50,7 @@
 
 .cruise-card__intro {
   display: flex;
-  flex: 1;
+  justify-content: space-between;
   flex-direction: column;
 
   width: 100%;
@@ -78,7 +78,8 @@
 }
 
 .cruise-card__description {
-  flex: 1;
+  flex-grow: 0;
+  flex-shrink: 1;
   margin: 0;
   padding: 0;
 
@@ -108,4 +109,12 @@
 
   color: $color-default-black;
   background-color: $color-default-white;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

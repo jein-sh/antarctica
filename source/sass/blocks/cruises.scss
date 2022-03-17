@@ -57,7 +57,7 @@
 
 .cruises__item {
   width: 260px;
-  height: 386px;
+  min-height: 386px;
 
   @include vp-1259 {
     width: 309px;
