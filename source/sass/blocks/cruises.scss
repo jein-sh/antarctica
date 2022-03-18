@@ -57,7 +57,7 @@
 
 .cruises__item {
   max-width: 260px;
-  min-height: 386px;
+  height: 386px;
 
   @include vp-1023 {
     max-width: 309px;

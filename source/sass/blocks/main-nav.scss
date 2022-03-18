@@ -45,6 +45,8 @@
       font-size: 18px;
       line-height: 22px;
 
+      overflow: auto;
+
       background-color: $color-default-white;
     }
 
@@ -198,6 +200,7 @@
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 
   margin: 0;
   padding: 0;
@@ -211,7 +214,7 @@
 
 .main-nav__item {
   display: flex;
-  margin-left: 33px;
+  margin: 5px 0 5px 33px;
 
   @include vp-1023 {
     margin-left: 23px;

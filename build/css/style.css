@@ -637,6 +637,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -646,7 +649,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 33px;
+  margin: 5px 0 5px 33px;
 }
 
 .main-nav__item a {
@@ -800,7 +803,7 @@ button,
 }
 
 .page-footer__nav-item {
-  margin-right: 33px;
+  margin: 5px 33px 5px 0;
 }
 
 .page-footer__nav-item a {
@@ -981,7 +984,7 @@ button,
 
 .cruises__item {
   max-width: 260px;
-  min-height: 386px;
+  height: 386px;
 }
 
 .cruise-card {
@@ -995,12 +998,14 @@ button,
   flex-direction: column;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   color: #f9fbfd;
 }
 
 .cruise-card:hover .cruise-card__intro,
 .cruise-card:focus-within .cruise-card__intro {
   z-index: 2;
+  overflow: scroll;
 }
 
 .cruise-card h3 {
@@ -1035,26 +1040,23 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  min-height: 100%;
   padding: 5px 24px 35px;
   z-index: -1;
   background-color: #011c40;
 }
 
 .cruise-card__intro h4 {
-  margin-bottom: 3px;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 }
 
 .cruise-card__description {
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -1080,10 +1082,11 @@ button,
   text-align: center;
   color: #011c40;
   background-color: #f9fbfd;
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .cruise-card__button:hover {
@@ -1235,6 +1238,10 @@ button,
   font-weight: 600;
   color: #011c40;
   background-color: #f9fbfd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   border: 0;
   cursor: pointer;
 }
@@ -1574,6 +1581,7 @@ button,
     padding: 75px 30px 30px 15px;
     font-size: 18px;
     line-height: 22px;
+    overflow: auto;
     background-color: #f9fbfd;
   }
 
