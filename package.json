@@ -14,7 +14,9 @@
     "build": "cross-env NODE_ENV=production gulp build & gulp imagemin",
     "start": "cross-env NODE_ENV=development gulp start",
     "webp": "gulp webp",
-    "imagemin": "gulp imagemin"
+    "imagemin": "gulp imagemin",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "editorconfig-cli": [
     "*.json",
@@ -49,6 +51,7 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "7.0.1",
     "gulp-webp": "4.0.1",
+    "gh-pages": "^3.2.3",
     "stylelint": "13.13.1",
     "webpack": "4.42.0",
     "webpack-stream": "5.2.1"
