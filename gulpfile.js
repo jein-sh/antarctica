@@ -32,6 +32,13 @@ const css = () => {
       .pipe(server.stream());
 };
 
+const ghPages = require('gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
+
 const js = () => {
   return gulp.src(['source/js/main.js'])
       .pipe(webpackStream(webpackConfig))
@@ -145,10 +152,3 @@ exports.imagemin = optimizeImages;
 exports.webp = createWebp;
 exports.start = start;
 exports.build = build;
-
-const ghPages = require('gh-pages');
-
-gulp.task('deploy', function() {
-  return gulp.src('./build/**/*')
-    .pipe(ghPages());
-});
